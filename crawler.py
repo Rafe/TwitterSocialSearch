@@ -1,10 +1,21 @@
-import webbrowser
+import time
+from getpass import getpass
+from tweepy import *
 
-import tweepy
+import setting
 
-if __name__ == "__main__":
+consumer_token = setting.consumer_token
+consumer_secret = setting.consumer_secret
+key = setting.user_key 
+secret = setting.user_token
 
-  key = ""
-  secret = ""
-  auth = tweepy.OAuthHandler(key,secret)
+auth = OAuthHandler(consumer_token,consumer_secret)
+
+auth.set_access_token(key,secret)
+
+api = API(auth)
+timeline =  api.user_timeline("gugod")
+
+for twit in timeline:
+  print "%s twit : %s" %(twit.user.name,twit.text)
 
