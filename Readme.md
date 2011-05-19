@@ -32,7 +32,29 @@ Draft
 Social Search is a new topic of how search engine provide personal result for query 
 or topic based on user's profile and connection on social website like twitter,facebook or LinkedIn
 
-2.authority vs connection
+2.authority vs connection  
+traditional type of search engine is to calculate on the authority of content source,
+like pagerank, hits, is the kind of algorithm.
+the social media rightnow use a different approach,
+use the connection of the user and content to different and customize the search results,
+That is, use the user's personal factor "connection" instead of authority of all majority.  
+
+The good part is: with the user profile and friends, we can better find the 
+result that user might want,
+The bad part is: more algorithm, the result might be narrow in small group of content  
+
+The combination of these two part should be the future of search  
+
++ Library knowledge vs Street knowledge  
+The authority rank search is more like library, the content is ranked by how many  
+other book refering them and how many reader borrow them  
+The social search is more like street knowledge, you ask your friends for the opition, your friends
+should have simular kind of interest with you, 
+and you can also heard of the reputation amounts your friend  
+
++ Facebook like button in search and +1 button  
+The facebook like button can be a new ranking element for social search,
+google saw it's potential and give out the +1 button for there own searching  
 
 3.Social search in work:
 
@@ -75,7 +97,7 @@ gmail to gain your social graph, also use the simularity to rank the result(not 
 
 5. Social Search and recommendation system  
 
-Social Search in some way is pretty close to recommendation system,
+Social search has the same way of recommendation system, that is,
 It can use your background to find the content you may like, and have different ranking on 
 content.
 and the ranking is based on large datas and machine learning based on large data.
