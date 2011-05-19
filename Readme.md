@@ -89,17 +89,33 @@ TimeFactor is decided by time pass
 
 + Hunch  
 
-+ Google Social Search  
+Taste graph
 
-the information of google social search and algorithm is not clear,  
-but it will search on your twitter follower and 
-gmail to gain your social graph, also use the simularity to rank the result(not sure)
+Teste graph build the web under the items, run on a super computer and written in 27000 c codes
+http://blog.hunch.com/wp-content/uploads/2011/05/110509-HUNCH-TASTEGRAPH_800px_v2.png
+Data:
+use Teach Hunch About You question to predict your interest
+item rating on Hunch.com
+facebook likes
+checkin data from 4sq and facebook
+social connection on facebook and twitter
+hunch.com/goodies to test the Teste graph for gift recommendation
+
+using c and assembly to calculate the algorithm matrix in cycle which is overwhelming the 
+normal linear algebra
+
++ Google Social Search  
+http://www.google.com/s2/u/0/search/social
+
+google social search 
+it will search on your twitter,flicker,gmail,blogger(if you have) and google reader 
+to gain your social graph, and provide the social results with the connection data with that source
+eg. link XXX - by James - you follow him on twitter
 
 5. Social Search and recommendation system  
 
 Social search has the same way of recommendation system, that is,
-It can use your background to find the content you may like, and have different ranking on 
-content.
+It can use your background to find the content you may like, and have different ranking on content.
 and the ranking is based on large datas and machine learning based on large data.
 
 simularity is:  
@@ -122,4 +138,4 @@ R(Query) = Auth(Result)*Sim(Result|Topic)*C(Result|Author)*Rel(Query|Result)
 6.conclusion:  
   social search should become an important factor in social media and recommendation system
   but I doesn't nessassarily better than traditional pagerank method.
-  We still need development on this area.  
+  We still need development on this area. 
