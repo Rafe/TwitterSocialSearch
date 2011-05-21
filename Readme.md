@@ -112,7 +112,7 @@ it will search on your twitter,flicker,gmail,blogger(if you have) and google rea
 to gain your social graph, and provide the social results with the connection data with that source
 eg. link XXX - by James - you follow him on twitter
 
-5. Social Search and recommendation system  
+4. Social Search and recommendation system  
 
 Social search has the same way of recommendation system, that is,
 It can use your background to find the content you may like, and have different ranking on content.
