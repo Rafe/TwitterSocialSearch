@@ -3,6 +3,7 @@ from getpass import getpass
 from tweepy import *
 import setting
 import time
+import math
 from node import Node
 
 REQUEST_INTERVAL = 1
@@ -36,7 +37,7 @@ class SocialCrawler:
     
     for id in retweets_count:
       if id in self.graph:
-        self.graph[id].score += 0.1 * retweets_count[id]
+        self.graph[id].score += math.log(retweets_count[id])
 
   def buildGraph(self,id=0):
     followers = []
@@ -57,7 +58,7 @@ class SocialCrawler:
         if not follower.id in self.graph:
           self.graph[follower.id] = Node(follower.id,1,follower.followers_count)
         else:
-          self.graph[follower.id].score += 1
+          self.graph[follower.id].score += 0.35
       except Exception as e:
         print e
     print self.graph
@@ -80,4 +81,3 @@ if __name__ == "__main__":
   crawler = SocialCrawler()
   crawler.buildGraph()
   crawler.addRetweets()
-
